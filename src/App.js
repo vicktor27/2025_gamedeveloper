@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import HelloStudents from "./components/HelloStudents";
+import Form from "./components/Form";
+import "./App.css";
+import Counter from "./components/Counter";
 
 function App() {
+  let welcomeMessage = "Hello Students!!!!";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloStudents p1="Erasmo" p2="Elizabeth" />
+      <Form name="Nombre" age="Edad" email="Correo Electronico"></Form>
+      <Form name="Apellido" age="direccion" email="Telefono"></Form>
+      <Counter />
     </div>
   );
 }
+
+const styles = {
+  container: {
+    textAlign: "center",
+    marginTop: "50px",
+  },
+  title: {
+    fontSize: "24px",
+    marginBottom: "20px",
+  },
+};
+//form, que reciba como parametro nombre, edad, email;
 
 export default App;
