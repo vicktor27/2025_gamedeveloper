@@ -1,18 +1,20 @@
 import logo from "./logo.svg";
 import HelloStudents from "./components/HelloStudents";
 import Form from "./components/Form";
-import "./App.css";
+
 import Counter from "./components/Counter";
+import Label from "./components/Label";
+import { useState } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   let welcomeMessage = "Hello Students!!!!";
 
   return (
     <div className="App">
-      <HelloStudents p1="Erasmo" p2="Elizabeth" />
-      <Form name="Nombre" age="Edad" email="Correo Electronico"></Form>
-      <Form name="Apellido" age="direccion" email="Telefono"></Form>
-      <Counter />
+      <Header></Header>
+      <Footer></Footer>
     </div>
   );
 }

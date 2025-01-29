@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 
 const Counter = () => {
-  let x = 5;
-  // Estado para manejar el contador
-  const [count, setCount] = useState(0); //useState  //sirve para establecer valores a la variable
-  //directamente
-
-  // Función para incrementar el contador
+  const [count, setCount] = useState(0);
   const handleIncrement = () => {
     setCount(count + 1);
   };
-
-  // Función para decrementar el contador
   const handleDecrement = () => {
     setCount(count - 1);
   };
