@@ -3,7 +3,7 @@ const Footer = (props) => {
   return (
     <>
       <footer>
-        <p> counter value {props.count}</p>;
+        <p> Esto es un footer {props.count}</p>;
       </footer>
     </>
   );
