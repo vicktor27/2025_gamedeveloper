@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 
-<<<<<<< HEAD
-const Counter = (props) => {
-  const [count, setCount] = useState(0);
-
-  // Función para incrementar el contador
-=======
 const Counter = () => {
   const [count, setCount] = useState(0);
->>>>>>> b9fab1add2063c2c6f1bd271cc603623f031705d
   const handleIncrement = () => {
     setCount(count + 1);
   };
