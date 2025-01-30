@@ -5,7 +5,7 @@ const Header = () => {
       <header style={styles.header}>
         <div style={styles.flex}>
           <Logo></Logo>
-          <p>Phd Victor Manuel Solis Cardoza</p>
+          <p>Alan David Barraza Gonzalez</p>
         </div>
       </header>
     </>
