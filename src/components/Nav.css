@@ -1,0 +1,5 @@
+.menuList {
+    list-style-type:None;
+    column-gap:50px;
+    display:flex;
+}

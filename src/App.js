@@ -1,32 +1,33 @@
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import HelloStudents from "./components/HelloStudents";
-import Form from "./components/Form";
-import "./App.css";
+import Form from "./components/form";
 import Counter from "./components/Counter";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import "./App.css";
 
-function App() {
-  let welcomeMessage = "Hello Students!!!!";
+  function App() {
+    return (
+      <>
+        <div className="App">
+          <Header></Header> 
+          <Footer></Footer>
+        </div>
+      </>
+    );
+  }
+  
 
-  return (
-    <div className="App">
-      <HelloStudents p1="Erasmo" p2="Elizabeth" />
-      <Form name="Nombre" age="Edad" email="Correo Electronico"></Form>
-      <Form name="Apellido" age="direccion" email="Telefono"></Form>
-      <Counter />
-    </div>
-  );
-}
-
-const styles = {
-  container: {
-    textAlign: "center",
-    marginTop: "50px",
-  },
-  title: {
-    fontSize: "24px",
-    marginBottom: "20px",
-  },
-};
-//form, que reciba como parametro nombre, edad, email;
+//const styles = {
+ // container: {
+    //maxWidth: "1280px",
+    //textAlign: "center",
+   // marginTop: "50px",
+ // },
+ // title: {
+    //fontSize: "24px",
+  //  marginBottom: "20px",
+//  },
+//};
 
 export default App;
