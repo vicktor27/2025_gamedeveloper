@@ -4,6 +4,7 @@ import Form from "./components/form";
 import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Main from "./components/Main";
 import "./App.css";
 
   function App() {
@@ -11,6 +12,7 @@ import "./App.css";
       <>
         <div className="App">
           <Header></Header> 
+          <Main></Main>
           <Footer></Footer>
         </div>
       </>
@@ -18,16 +20,6 @@ import "./App.css";
   }
   
 
-//const styles = {
- // container: {
-    //maxWidth: "1280px",
-    //textAlign: "center",
-   // marginTop: "50px",
- // },
- // title: {
-    //fontSize: "24px",
-  //  marginBottom: "20px",
-//  },
-//};
+
 
 export default App;

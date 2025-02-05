@@ -1,14 +1,29 @@
 import React, { useState } from "react";
 
-const Counter = (props) => {
+const Counter = () => {
+  let x = 5;
+  // Estado para manejar el contador
+  const [count, setCount] = useState(0); //useState  //sirve para establecer valores a la variable
+  //directamente
+
+  // Función para incrementar el contador
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  // Función para decrementar el contador
+  const handleDecrement = () => {
+    setCount(count - 1);
+  };
+
   return (
     <div style={styles.container}>
-      <p style={styles.counter}>{props.count}</p>
+      <p style={styles.counter}>{count}</p>
       <div style={styles.buttons}>
-        <button style={styles.button} onClick={props.handleIncrement}>
+        <button style={styles.button} onClick={handleIncrement}>
           +
         </button>
-        <button style={styles.button} onClick={props.handleDecrement}>
+        <button style={styles.button} onClick={handleDecrement}>
           -
         </button>
       </div>
