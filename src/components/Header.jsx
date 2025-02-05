@@ -1,11 +1,14 @@
-import Logo from "./Logo";
+import Logo from "./logo";
+import Nav from "./Nav";
+import "./Header.css";
 const Header = () => {
   return (
     <>
-      <header style={styles.header}>
-        <div style={styles.flex}>
+      <header className="Header">
+        <div className="Flex">
           <Logo></Logo>
-          <p>Alan David Barraza Gonzalez</p>
+          <Nav></Nav>
+          <p>Alan david Barraza Gonzalez</p>
         </div>
       </header>
     </>
@@ -13,14 +16,3 @@ const Header = () => {
 };
 
 export default Header;
-
-const styles = {
-  header: {
-    maxWidth: "1280px",
-  },
-  flex: {
-    display: "flex",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-};
