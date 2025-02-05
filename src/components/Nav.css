@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-.menuList {
-    list-style-type:None;
-    column-gap:50px;
-    display:flex;
-}
-=======
 .MenuList {
   list-style-type: none;
   column-gap: 50px;
   display: flex;
 }
->>>>>>> 109b629f16357c9ceaeafb05a962b2c4a9a99ea4

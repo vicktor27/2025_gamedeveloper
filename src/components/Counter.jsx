@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 const Counter = (props) => {
-<<<<<<< HEAD:src/components/Counter.jsx
-=======
   const [count, setCount] = useState(0);
 
   // Función para incrementar el contador
@@ -15,7 +13,6 @@ const Counter = (props) => {
     setCount(count - 1);
   };
 
->>>>>>> 109b629f16357c9ceaeafb05a962b2c4a9a99ea4:src/components/Counter.js
   return (
     <div style={styles.container}>
       <p style={styles.counter}>{props.count}</p>
