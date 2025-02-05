@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+<<<<<<< HEAD:src/components/Counter.js
 const Counter = () => {
   const [count, setCount] = useState(0);
   const handleIncrement = () => {
@@ -9,14 +10,17 @@ const Counter = () => {
     setCount(count - 1);
   };
 
+=======
+const Counter = (props) => {
+>>>>>>> 030617bad2b09949eb157ca0071d851a94b1d139:src/components/Counter.jsx
   return (
     <div style={styles.container}>
-      <p style={styles.counter}>{count}</p>
+      <p style={styles.counter}>{props.count}</p>
       <div style={styles.buttons}>
-        <button style={styles.button} onClick={handleIncrement}>
+        <button style={styles.button} onClick={props.handleIncrement}>
           +
         </button>
-        <button style={styles.button} onClick={handleDecrement}>
+        <button style={styles.button} onClick={props.handleDecrement}>
           -
         </button>
       </div>
