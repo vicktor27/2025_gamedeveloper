@@ -1,14 +1,8 @@
 const Logo = () => {
   return (
     <>
-      <img src="./logo192.png"></img>
+      <img src="./logo192.png" className="Img"></img>
     </>
   );
 };
 export default Logo;
-
-const styles = {
-  img: {
-    width: "128px",
-  },
-};
