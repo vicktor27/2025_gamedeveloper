@@ -1,18 +1,6 @@
 import React, { useState } from "react";
 
-<<<<<<< HEAD:src/components/Counter.js
-const Counter = () => {
-  const [count, setCount] = useState(0);
-  const handleIncrement = () => {
-    setCount(count + 1);
-  };
-  const handleDecrement = () => {
-    setCount(count - 1);
-  };
-
-=======
 const Counter = (props) => {
->>>>>>> 030617bad2b09949eb157ca0071d851a94b1d139:src/components/Counter.jsx
   return (
     <div style={styles.container}>
       <p style={styles.counter}>{props.count}</p>
