@@ -1,11 +1,9 @@
-import "./Logo.css";
-
+import "./logo.css";
 const Logo = () => {
-  return (
-    <>
-      <img src="./logo192.png" className="Img" alt="Company Logo" />
-    </>
-  );
-};
-
-export default Logo;
+    return (
+      <>
+         <img src="./valogo.png" className="logoval" alt="Company Logo" />
+      </>
+    );
+  };
+  export default Logo;

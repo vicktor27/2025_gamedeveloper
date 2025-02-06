@@ -2,7 +2,7 @@ const Label = (props) => {
   console.log(props);
   return (
     <>
-      <p> counter value {props.count}</p>;
+      <p>counter value {count.props}</p>
     </>
   );
 };
