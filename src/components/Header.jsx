@@ -8,7 +8,7 @@ const Header = () => {
         <div className="Flex">
           <Logo></Logo>
           <Nav></Nav>
-          <p>Jose Luis Andrade Pulido</p>
+          <p>Natanael Isacar Salazar Holguin</p>
         </div>
       </header>
     </>

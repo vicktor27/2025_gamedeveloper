@@ -9,7 +9,7 @@ const Header = () => {
         <div className="Flex">
           <Logo> </Logo>
           <Nav></Nav>
-          <p>Jaime Angel Cruz de la Fuente</p>
+          <p>Natanael Isacar Salazar Holguin</p>
         </div>
       </header>
     </>

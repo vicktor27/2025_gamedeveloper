@@ -1,26 +1,16 @@
 import React, { useState } from "react";
+import { useCounter } from "./CounterContext";
 
-const Counter = (props) => {
-  const [count, setCount] = useState(0);
-
-  // Función para incrementar el contador
-  const handleIncrement = () => {
-    setCount(count + 1);
-  };
-
-  // Función para decrementar el contador
-  const handleDecrement = () => {
-    setCount(count - 1);
-  };
-
+const Counter = () => {
+ const {count, handleIncrement, handleDecrement} = useCounter();
   return (
     <div style={styles.container}>
-      <p style={styles.counter}>{props.count}</p>
+      <p style={styles.counter}>{count}</p>
       <div style={styles.buttons}>
-        <button style={styles.button} onClick={props.handleIncrement}>
+        <button style={styles.button} onClick={handleIncrement}>
           +
         </button>
-        <button style={styles.button} onClick={props.handleDecrement}>
+        <button style={styles.button} onClick={handleDecrement}>
           -
         </button>
       </div>
