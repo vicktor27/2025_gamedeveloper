@@ -9,7 +9,7 @@ const Header = () => {
         <div className="Flex">
           <Logo></Logo>
           <Nav></Nav>
-          <p>Phd Victor Manuel Solis Cardoza</p>
+          <p>Phd Natanael Salazar</p>
         </div>
       </header>
     </>
