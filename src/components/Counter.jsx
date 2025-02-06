@@ -1,19 +1,5 @@
 import React, { useState } from "react";
 import { useCounter } from "./CounterContext";
-<<<<<<< HEAD
-import "./Counter.css";
-
-const Counter = () => {
-  const { count, handleIncrement, handleDecrement } = useCounter();
-  return (
-    <div className="container">
-      <p className="counter">{count}</p>
-      <div className="buttons">
-        <button className="button" onClick={handleIncrement}>
-          +
-        </button>
-        <button className="button" onClick={handleDecrement}>
-=======
 
 const Counter = () => {
  const {count, handleIncrement, handleDecrement} = useCounter();
@@ -25,7 +11,6 @@ const Counter = () => {
           +
         </button>
         <button style={styles.button} onClick={handleDecrement}>
->>>>>>> 704040e292f6a714d09e17ae03cc7daec27842df
           -
         </button>
       </div>
@@ -34,10 +19,6 @@ const Counter = () => {
 };
 
 // Estilos en línea
-<<<<<<< HEAD
-
-export default Counter;
-=======
 const styles = {
   container: {
     textAlign: "center",
@@ -64,4 +45,3 @@ const styles = {
 };
 
 export default Counter;
->>>>>>> 704040e292f6a714d09e17ae03cc7daec27842df
