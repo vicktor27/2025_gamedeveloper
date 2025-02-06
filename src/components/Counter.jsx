@@ -1,21 +1,8 @@
 import React, { useState } from "react";
+import { useCounter } from "./Context";
 
 const Counter = () => {
-  let x = 5;
-  // Estado para manejar el contador
-  const [count, setCount] = useState(0); //useState  //sirve para establecer valores a la variable
-  //directamente
-
-  // Función para incrementar el contador
-  const handleIncrement = () => {
-    setCount(count + 1);
-  };
-
-  // Función para decrementar el contador
-  const handleDecrement = () => {
-    setCount(count - 1);
-  };
-
+const{count, handleIncrement,handleDecrement}=useCounter();
   return (
     <div style={styles.container}>
       <p style={styles.counter}>{count}</p>
