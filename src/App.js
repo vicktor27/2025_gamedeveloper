@@ -1,42 +1,27 @@
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import HelloStudents from "./components/HelloStudents";
 import Form from "./components/Form";
-import "./App.css";
 import Counter from "./components/Counter";
-import React, { useState } from "react";
-import Footer from "./components/footer";
+import { CounterProvider } from "./components/CounterContext";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import "./App.css";
 
 function App() {
-  let welcomeMessage = "Hello Students!!!!";
-  const [count, setCount] = useState(0);
-
-    // Función para incrementar el contador
-    const handleIncrement = () => {
-      setCount(count + 1);
-    };
-  
-    // Función para decrementar el contador
-    const handleDecrement = () => {
-      setCount(count - 1);
-    };
-
   return (
-    <div className="App">
-      <HelloStudents p1="Erasmo" p2="Elizabeth" />
-      <Form name="Nombre" age="Edad" email="Correo Electronico"></Form>
-      <Form name="Apellido" age="direccion" email="Telefono"></Form>
-      <Counter 
-        count = {count}
-        handleIncrement = {handleIncrement}
-        handleDecrement = {handleDecrement}
-        />
-        <label count = {count}>count: {count}</label>
-        <Footer count = {count}></Footer>
-        
-    </div>
+    <CounterProvider>
+      <div className="App">
+        <Header></Header>
+        <Main></Main>
+        <Footer></Footer>
+      </div>
+      </CounterProvider>
+    
   );
-}
+};
 
+// Estilos (puedes eliminar este objeto si no lo usas)
 const styles = {
   container: {
     textAlign: "center",
@@ -47,6 +32,5 @@ const styles = {
     marginBottom: "20px",
   },
 };
-//form, que reciba como parametro nombre, edad, email;
 
 export default App;

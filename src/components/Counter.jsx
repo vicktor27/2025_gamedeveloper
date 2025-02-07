@@ -1,7 +1,13 @@
 import React, { useState } from "react";
+import { useCounter } from "./CounterContext";
 
+<<<<<<< HEAD:src/components/Counter.js
 const Counter = (props) => {
   
+=======
+const Counter = () => {
+ const {count, handleIncrement, handleDecrement} = useCounter();
+>>>>>>> 7a1f1c8d6934a8d7e09fb3a4fac50bcdab9f54c1:src/components/Counter.jsx
   return (
     <div style={styles.container}>
       <p style={styles.counter}>{props.count}</p>
